@@ -8,7 +8,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Developer Mango
-  tagline: 가랑비는 맞는다. 하지만 폭풍은 내 것이다. 
+  tagline: 육참골단, 가랑비는 맞는다. 하지만 폭풍은 내 것이다. 
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
