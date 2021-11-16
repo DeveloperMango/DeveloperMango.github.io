@@ -10,29 +10,27 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme			: "minimal-mistakes-jekyll"
-# remote_theme		: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin	: "default" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale		: "ko-KR" # 주요언어 설정
-title		: "Welcome Mango Blog" # 탭할때 보이는 문구
-title_separator	: "-"
-subtitle		: # 제목 하단 영역의 소제목
-name		: "Mango" # 하단 영역의 이름
-description	: #"An amazing website."
-url		: "https://developermango.github.io"
-baseurl		: # 서브 홈페이지 경로(예외발생)
-repository		: "https://github.com/DeveloperMango/DeveloperMango.github.io"
-teaser		: # "/assets/images/portfolio.png"
-logo		: "/assets/images/portfolio.png"
-masthead_title	: "Mango Blog"
-# breadcrumbs	: false # true, false (default)
-words_per_minute	: 200
-
-#댓글기능
+locale                   : "ko-KR"
+title                    : "Welcome Mango Blog🦴🐕🦶🏼📏"
+title_separator          : "-"
+subtitle                 : #"NONE"
+name                     : "Mango"
+description              : "기록용 블로그✏"
+url                      : # the base hostname & protocol for your site e.g. ""https://developermango.github.io""
+baseurl                  : # "NONE"
+repository               : "DeveloperMango/DeveloperMango.github.io"
+teaser                   : # "/assets/images/portfolio.png"
+logo                     : # "/assets/images/portfolio.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs            : true # true, false (default)
+words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -43,8 +41,8 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : "github-light" # "github-light" (default), "github-dark"
+    issue_term           : "pathname" # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
     category_name        : # Full text name of the category
@@ -55,21 +53,15 @@ comments:
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-
-#스팸 방지 기능	: 사용안함
 reCaptcha:
-  siteKey		:
-  secret		:
-
-#새 게시물 내용을 사용자에게 전달
+  siteKey                :
+  secret                 :
 atom_feed:
-  path		: # blank (default) uses feed.xml
-  hide		: # true, false (default)
-search		: true #사이트 전체 검색 기능
-search_full_content	: # true, false (default)
-search_provider	: # lunr (default), algolia, google
-
-#사용 안함
+  path                   : # blank (default) uses feed.xml
+  hide                   : # true, false (default)
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -79,22 +71,21 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-
 google_site_verification :
 bing_site_verification   :
-yandex_site_verification :
 naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : # "NONE"
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
+  username               : # "NONE"
+  app_id                 : # "NONE"
+  publisher              : # "NONE"
 og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
@@ -110,52 +101,31 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Mango"
+  avatar           : "/assets/images/portfolio.png"
+  bio              : "가랑비는 맞지만 폭풍은 내것이다." #"I am an **amazing** person."
+  location         : "Seoul, Korea"
+  #email            : "gomyungjin0302@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "gomyungjin0302@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/DeveloperMango"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/_mango_23_"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://github.com/DeveloperMango"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/_mango_23_"
 
 
 # Reading Files
