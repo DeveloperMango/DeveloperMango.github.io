@@ -5,14 +5,14 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <li>
-            💻 <span>전체 글 수</span> <span>{{sum}}</span> <span>개</span> 
+            <br>💻 <span>전체 글 수</span> <span>{{sum}}</span> <span>개</span> 
       </li>
       <li>
         <span class="nav__sub-title">Embedded</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Android" %}
-                        <li><a href="/categories/Android" class="">Android ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Android" class="">Android({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

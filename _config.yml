@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -23,7 +23,7 @@ name                     : "Mango"
 description              : "기록용 블로그✏"
 url                      : # the base hostname & protocol for your site e.g. ""https://developermango.github.io""
 baseurl                  : # "NONE"
-repository               : "DeveloperMango/DeveloperMango.github.io"
+repository               : "DeveloperMango/blog-comments"
 teaser                   : # "/assets/images/portfolio.png"
 logo                     : # "/assets/images/portfolio.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -102,14 +102,11 @@ analytics:
 # Site Author
 author:
   name             : "Mango"
-  avatar           : "/assets/images/portfolio.png"
+  avatar           : "/assets/images/portfolio_original.png"
   bio              : "가랑비는 맞지만 폭풍은 내것이다." #"I am an **amazing** person."
   location         : "Seoul, Korea"
-  #email            : "gomyungjin0302@gmail.com"
+  email            : "gomyungjin0302@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "gomyungjin0302@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/DeveloperMango"
@@ -262,8 +259,9 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
+      read_time: false	#소요시간
+      show_date: true	#현재날짜
+      comments: true	
       share: true
       related: true
       mathjax: true
