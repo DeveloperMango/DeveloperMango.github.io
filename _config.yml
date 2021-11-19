@@ -259,9 +259,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false	#소요시간
-      show_date: true	#현재날짜
-      comments: true	
+      read_time: true
+      comments: true
       share: true
       related: true
       mathjax: true
