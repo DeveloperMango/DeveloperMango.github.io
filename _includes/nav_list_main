@@ -17,5 +17,37 @@
                 {% endfor %}
             </ul>
       </li>
+<br>
+      <li>
+        <span class="nav__sub-title">Front-End</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "HTML" %}
+                        <li><a href="/categories/Android" class="">HTML({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "CSS" %}
+                        <li><a href="/categories/Android" class="">CSS({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "JAVASCRIPTS" %}
+                        <li><a href="/categories/Android" class="">JAVASCRIPTS({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+
+
+
   </ul>
+
+
+
+
 </nav>
