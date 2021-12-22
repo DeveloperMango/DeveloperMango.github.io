@@ -17,37 +17,52 @@
                 {% endfor %}
             </ul>
       </li>
-<br>
+
+<div style="line-height:35%;"><br></div>
       <li>
         <span class="nav__sub-title">Front-End</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "HTML" %}
-                        <li><a href="/categories/Android" class="">HTML({{category[1].size}})</a></li>
+                        <li><a href="/categories/HTML" class="">HTML({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "CSS" %}
-                        <li><a href="/categories/Android" class="">CSS({{category[1].size}})</a></li>
+                        <li><a href="/categories/CSS" class="">CSS({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "JAVASCRIPTS" %}
-                        <li><a href="/categories/Android" class="">JAVASCRIPTS({{category[1].size}})</a></li>
+                    {% if category[0] == "JavaScript" %}
+                        <li><a href="/categories/JavaScript" class="">JavaScript({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+
+<div style="line-height:35%;"><br></div>
+      <li>
+        <span class="nav__sub-title">Etc</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Blog" %}
+                        <li><a href="/categories/Blog" class="">Blog({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Git" %}
+                        <li><a href="/categories/Git" class="">Git({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
       </li>
 
 
-
   </ul>
-
-
-
-
 </nav>

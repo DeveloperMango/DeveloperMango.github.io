@@ -23,9 +23,10 @@
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
 
-    &:hover {
+    // 마우스 포인터에 따른 투명도 설정
+    /*&:hover {
       opacity: 1;
-    }
+    }*/
 
     &.sticky {
       overflow-y: auto;
@@ -133,9 +134,10 @@
     height: auto;
   }
 
+  //image 크기와 테투리 설정
   img {
     max-width: 200px; 	//110px;
-    border-radius: 10%;	//50%;
+    border-radius: 10%;	//50%
 
    @include breakpoint($large) {
       padding: 0px;
